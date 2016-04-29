@@ -6,9 +6,16 @@ use Mix.Config
 #
 # You should also configure the url host to something
 # meaningful, we use this information when generating URLs.
+#
+# `url` has been omitted here.
+#
+# The value of check_origin has been set to a domain that should resolve to the running server
+# (usually localhost or the value of `docker-machine ip <machine>`
 config :chat, Chat.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com"]
+  cache_static_manifest: "priv/static/manifest.json",
+  check_origin: ["//dev.codespyre.com:8888", "//phxchat.codespyre.com"],
+  server: true
 
 # ## SSL Support
 #

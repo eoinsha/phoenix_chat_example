@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+erl_crash.dump
+
+node_modules
+
+_build
+rel
+deps
+
+# Other files and folders
+README.md
+.gitignore
+.git
+
+.DS_Store

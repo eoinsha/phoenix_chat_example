@@ -3,11 +3,20 @@
 /deps
 /*.ez
 
+rel
+
 # Generate on crash by the VM
 erl_crash.dump
 
 # Static artifacts
 /node_modules
+
+priv/static/manifest.json
+priv/static/**/*.map
+priv/static/**/*.gz
+priv/static/css/app-*.css
+priv/static/js/app-*.js
+priv/static/images/*-*.png
 
 # Since we are building js and css from web/static,
 # we ignore priv/static/{css,js}. You may want to
